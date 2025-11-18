@@ -2,68 +2,105 @@
 <html>
 <head>
     <title>::: The Gallery - Cardinal Books :::</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
+        /* Global Theme Styles */
         body {
-            font-family: "Courier New", Courier, monospace;
             background-color: #FFFFFF;
             color: #000000;
-            margin: 20px;
+            font-family: "Courier New", Courier, monospace;
+            margin: 0;
+            padding: 0;
         }
-        h1 {
+        .container {
+            width: 750px;
+            margin: 20px auto;
+            border: 5px solid #FF0000; /* Red Border */
+            background-color: #FFFFFF;
+            padding: 15px;
+        }
+        h1, h2 {
             color: #FF0000;
-        }
-        .genre {
-            margin-bottom: 15px;
-            padding: 10px;
-            border: 1px solid #FF0000;
-            display: flex; /* Use flexbox for image and text alignment */
-            align-items: center; /* Vertically center image and text */
-            background-color: #F8F8F8; /* Slightly off-white background */
-        }
-        .genre img {
-            margin-right: 15px;
-            width: 50px; /* Adjust image size as needed */
-            height: auto;
+            text-shadow: 2px 2px #FFFFFF;
         }
         a:link, a:visited {
-            color: #FF0000;
+            color: #FF0000; /* Red Links */
             text-decoration: none;
             font-weight: bold;
         }
         a:hover {
-            color: #000000;
+            color: #000000; /* Black on Hover */
             text-decoration: underline;
+        }
+
+        /* Specific Gallery Styles */
+        .genre {
+            margin-bottom: 20px;
+            padding: 10px;
+            border: 2px dashed #000000; /* Black dashed border */
+            background-color: #F0F0F0; /* Light gray background */
+            display: flex;
+            align-items: center;
+        }
+        .genre img {
+            margin-right: 15px;
+            width: 50px;
+            height: auto;
+            border: 3px solid #FF0000; /* Red border around the logo */
+        }
+        .genre p {
+            font-size: 10pt;
+            margin-top: 5px;
         }
     </style>
 </head>
 <body>
-    <h1>The Gallery - Our Book Genres</h1>
-    <p>Explore some of the wonderful literary worlds we offer at Cardinal Books!</p>
 
-    <div class="genre">
-        <img src="https://placehold.co/50x50/800000/FFFFFF?text=BOOK" alt="Book Icon">
-        <h2>Fiction</h2>
-        <p>Dive into imaginative stories, compelling characters, and thrilling plots.</p>
+<center>
+    <div class="container">
+
+        <h1>The Gallery - Our Book Genres</h1>
+        <p>Explore some of the wonderful literary worlds we offer at Cardinal Books!</p>
+        
+        <p>&nbsp;</p>
+
+        <div class="genre">
+            <img src="https://placehold.co/50x50/800000/FFFFFF?text=BOOK" alt="Book Icon">
+            <div>
+                <h2>Fiction</h2>
+                <p>Dive into imaginative stories, compelling characters, and thrilling plots.</p>
+            </div>
+        </div>
+
+        <div class="genre">
+            <img src="https://placehold.co/50x50/800000/FFFFFF?text=BOOK" alt="Book Icon">
+            <div>
+                <h2>Non-Fiction</h2>
+                <p>Learn something new with our wide selection of historical accounts, biographies, and scientific explorations.</p>
+            </div>
+        </div>
+
+        <div class="genre">
+            <img src="https://placehold.co/50x50/800000/FFFFFF?text=BOOK" alt="Book Icon">
+            <div>
+                <h2>Science Fiction & Fantasy</h2>
+                <p>Journey to other worlds, encounter mythical creatures, and explore futuristic societies.</p>
+            </div>
+        </div>
+
+        <div class="genre">
+            <img src="https://placehold.co/50x50/800000/FFFFFF?text=BOOK" alt="Book Icon">
+            <div>
+                <h2>Children's Books</h2>
+                <p>Spark young imaginations with colorful stories, educational adventures, and beloved characters.</p>
+            </div>
+        </div>
+
+        <p>&nbsp;</p>
+        <p style="text-align: center;"><a href="index.html">*** CLICK HERE TO RETURN TO THE HOMEPAGE ***</a></p>
+
     </div>
+</center>
 
-    <div class="genre">
-        <img src="https://placehold.co/50x50/800000/FFFFFF?text=BOOK" alt="Book Icon">
-        <h2>Non-Fiction</h2>
-        <p>Learn something new with our wide selection of historical accounts, biographies, and scientific explorations.</p>
-    </div>
-
-    <div class="genre">
-        <img src="https://placehold.co/50x50/800000/FFFFFF?text=BOOK" alt="Book Icon">
-        <h2>Science Fiction & Fantasy</h2>
-        <p>Journey to other worlds, encounter mythical creatures, and explore futuristic societies.</p>
-    </div>
-
-    <div class="genre">
-        <img src="https://placehold.co/50x50/800000/FFFFFF?text=BOOK" alt="Book Icon">
-        <h2>Children's Books</h2>
-        <p>Spark young imaginations with colorful stories, educational adventures, and beloved characters.</p>
-    </div>
-
-    <p><a href="index.html">Go back to the homepage</a></p>
 </body>
 </html>
